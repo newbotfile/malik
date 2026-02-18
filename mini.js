@@ -1,4 +1,3 @@
-
 const express = require('express');
 const axios = require('axios');
 const router = express.Router();
@@ -14,7 +13,7 @@ const serverUrls = {
     'server7': 'https://erfanxmini7-0c8f9137c32e.herokuapp.com',
     'server8': 'https://erfanxmini8-6b1f80d42176.herokuapp.com',
     'server9': 'https://erfanxmini9-97cb04dd19e8.herokuapp.com',
-    'server10': 'https://erfanxmini10-f6e2816cde71.herokuapp.com
+    'server10': 'https://erfanxmini10-f6e2816cde71.herokuapp.com'  // ✅ FIXED!
 };
 
 // Get server list
@@ -99,4 +98,3 @@ router.get('/random', (req, res) => {
 });
 
 module.exports = router;
-

@@ -1,7 +1,7 @@
 {
   "name": "jawad-md-pair",
   "version": "1.0.0",
-  "description": "JAWAD-MD Pair Code Generator",
+  "description": "ERFAN-MD Pair Code Generator",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

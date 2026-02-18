@@ -5,7 +5,7 @@ mini.html
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <title>JAWAD-MD | Mini BOT</title>
+  <title>ERFAN-MD | Mini BOT</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -626,7 +626,7 @@ mini.html
             <i class="fas fa-bolt"></i>
           </div>
         </div>
-        <h1 class="title">JAWAD-MD</h1>
+        <h1 class="title">ERFAN-MD</h1>
         <p class="subtitle">Generate Your Pairing Code</p>
       </div>
 
@@ -678,7 +678,7 @@ mini.html
               type="tel" 
               id="phoneNumber" 
               class="input" 
-              placeholder="92342758xxxxx"
+              placeholder="9233061xxxxx"
               pattern="[0-9]+"
               required
             >
@@ -712,7 +712,7 @@ mini.html
 
       <div class="footer">
         <p class="footer-text">
-          © 2026 JAWAD-MD | Powered By JawadTechX
+          © 2026 ERFAN-MD | Powered By DARKZONE-MD 
         </p>
       </div>
     </div>
@@ -1013,108 +1013,18 @@ const express = require('express');
 const axios = require('axios');
 const router = express.Router();
 
-// Server URLs for JAWAD-MD
+// Server URLs for ERFAN-MD
 const serverUrls = {
-    'server1': 'https://jawadtaklaofca1-676bd10b9578.herokuapp.com',
-    'server2': 'https://jawadtaklaofca10-b517ad7e1708.herokuapp.com',
-    'server3': 'https://jawadtaklaofca2-c40de34fc805.herokuapp.com',
-    'server4': 'https://jawadtaklaofca3-00d65c972a1e.herokuapp.com',
-    'server5': 'https://jawadtaklaofca4-ad8a0ca5e1be.herokuapp.com',
-    'server6': 'https://jawadtaklaofca5-ba2adac81d11.herokuapp.com',
-    'server7': 'https://jawadtaklaofca6-70ee2dc897dd.herokuapp.com',
-    'server8': 'https://jawadtaklaofca7-5b0110dc75dd.herokuapp.com',
-    'server9': 'https://jawadtaklaofca8-f764ab5568cc.herokuapp.com',
-    'server10': 'https://jawadtaklaofca9-15d694fb0ac3.herokuapp.com',
-    'server11': 'https://jawadtaklaofcb1-4126412342ec.herokuapp.com',
-    'server12': 'https://jawadtaklaofcb10-8af69e23609f.herokuapp.com',
-    'server13': 'https://jawadtaklaofcb2-df28cecbe30d.herokuapp.com',
-    'server14': 'https://jawadtaklaofcb3-a09e072f5284.herokuapp.com',
-    'server15': 'https://jawadtaklaofcb4-ffa057949a9b.herokuapp.com',
-    'server16': 'https://jawadtaklaofcb5-fe1d50b2c060.herokuapp.com',
-    'server17': 'https://jawadtaklaofcb6-a7d550120aca.herokuapp.com',
-    'server18': 'https://jawadtaklaofcb7-5a1a3214c218.herokuapp.com',
-    'server19': 'https://jawadtaklaofcb8-c1da07b047f5.herokuapp.com',
-    'server20': 'https://jawadtaklaofcb9-65d849c59602.herokuapp.com',
-    'server21': 'https://jawadtaklaofcc1-25bb0124f110.herokuapp.com',
-    'server22': 'https://jawadtaklaofcc10-2dc7000ca4ad.herokuapp.com',
-    'server23': 'https://jawadtaklaofcc2-6347f0067d53.herokuapp.com',
-    'server24': 'https://jawadtaklaofcc3-b298b074b59b.herokuapp.com',
-    'server25': 'https://jawadtaklaofcc4-396d9636077d.herokuapp.com',
-    'server26': 'https://jawadtaklaofcc5-5d2b7dfe4ed7.herokuapp.com',
-    'server27': 'https://jawadtaklaofcc6-635747c913a6.herokuapp.com',
-    'server28': 'https://jawadtaklaofcc7-3d28af72b294.herokuapp.com',
-    'server29': 'https://jawadtaklaofcc8-269f362e2e73.herokuapp.com',
-    'server30': 'https://jawadtaklaofcc9-709e0773b03a.herokuapp.com',
-    'server31': 'https://jawadtaklaofcd1-3ec657001023.herokuapp.com',
-    'server32': 'https://jawadtaklaofcd10-784346697a7a.herokuapp.com',
-    'server33': 'https://jawadtaklaofcd2-37380cba7c5c.herokuapp.com',
-    'server34': 'https://jawadtaklaofcd3-35dc9b202d61.herokuapp.com',
-    'server35': 'https://jawadtaklaofcd4-e86b23d0fdc1.herokuapp.com',
-    'server36': 'https://jawadtaklaofcd5-cb5e312fd05d.herokuapp.com',
-    'server37': 'https://jawadtaklaofcd6-c127f05224ed.herokuapp.com',
-    'server38': 'https://jawadtaklaofcd7-3699ecd0c540.herokuapp.com',
-    'server39': 'https://jawadtaklaofcd8-bb61681597dc.herokuapp.com',
-    'server40': 'https://jawadtaklaofcd9-f9b98d9a3000.herokuapp.com',
-    'server41': 'https://jawadtaklaofce1-755f9a30b571.herokuapp.com',
-    'server42': 'https://jawadtaklaofce10-837a2b42631c.herokuapp.com',
-    'server43': 'https://jawadtaklaofce2-e2501448cf00.herokuapp.com',
-    'server44': 'https://jawadtaklaofce3-37104e61acf5.herokuapp.com',
-    'server45': 'https://jawadtaklaofce4-8cd23d19e4fe.herokuapp.com',
-    'server46': 'https://jawadtaklaofce5-c9de9c024c4d.herokuapp.com',
-    'server47': 'https://jawadtaklaofce6-7aed9124a7b5.herokuapp.com',
-    'server48': 'https://jawadtaklaofce7-d0e938d564a8.herokuapp.com',
-    'server49': 'https://jawadtaklaofce8-eeb6183f1c4a.herokuapp.com',
-    'server50': 'https://jawadtaklaofce9-d88aaacf553d.herokuapp.com',
-    'server51': 'https://jawadtaklaofcf1-f11e502200b2.herokuapp.com',
-    'server52': 'https://jawadtaklaofcf10-092ba87ca85d.herokuapp.com',
-    'server53': 'https://jawadtaklaofcf2-769645eb6a2e.herokuapp.com',
-    'server54': 'https://jawadtaklaofcf3-ec9fd281174c.herokuapp.com',
-    'server55': 'https://jawadtaklaofcf4-03bc4ddd87ce.herokuapp.com',
-    'server56': 'https://jawadtaklaofcf5-e985afc85ab5.herokuapp.com',
-    'server57': 'https://jawadtaklaofcf6-52c86539a5d1.herokuapp.com',
-    'server58': 'https://jawadtaklaofcf7-65340798bd87.herokuapp.com',
-    'server59': 'https://jawadtaklaofcf8-50eab1198128.herokuapp.com',
-    'server60': 'https://jawadtaklaofcf9-9345f463a6fc.herokuapp.com',
-    'server61': 'https://jawadtaklaofcg1-2f8b4593c9a7.herokuapp.com',
-    'server62': 'https://jawadtaklaofcg2-121fcd376e35.herokuapp.com',
-    'server63': 'https://jawadtaklaofcg3-611a6d37ee04.herokuapp.com',
-    'server64': 'https://jawadtaklaofci1-551a44da74b8.herokuapp.com',
-    'server65': 'https://jawadtaklaofci2-b9f874a049a6.herokuapp.com',
-    'server66': 'https://jawadtaklaofci3-443a2b9bd98e.herokuapp.com',
-    'server67': 'https://jawadtaklaofci4-9955f9e03078.herokuapp.com',
-    'server68': 'https://jawadtaklaofci5-e47047cd1080.herokuapp.com',
-    'server69': 'https://jawadtaklaofci6-57987f14498c.herokuapp.com',
-    'server70': 'https://jawadtaklaofci7-0ff1682c7051.herokuapp.com',
-    'server71': 'https://jawadtaklaofck1-e7b633887074.herokuapp.com',
-    'server72': 'https://jawadtaklaofck10-5e06105bbe2b.herokuapp.com',
-    'server73': 'https://jawadtaklaofck2-ace39839fda2.herokuapp.com',
-    'server74': 'https://jawadtaklaofck3-54f129b8edca.herokuapp.com',
-    'server75': 'https://jawadtaklaofck4-48a64b9e78f1.herokuapp.com',
-    'server76': 'https://jawadtaklaofck5-0310df3cb041.herokuapp.com',
-    'server77': 'https://jawadtaklaofck6-4f118ac7dcb2.herokuapp.com',
-    'server78': 'https://jawadtaklaofck7-859a74b020a8.herokuapp.com',
-    'server79': 'https://jawadtaklaofck8-6f244b60abef.herokuapp.com',
-    'server80': 'https://jawadtaklaofck9-734a2494047d.herokuapp.com',
-    'server81': 'https://jawadtaklofxp1-6c97468e94d9.herokuapp.com',
-    'server82': 'https://jawadtaklofxp10-5433d9b4546a.herokuapp.com',
-    'server83': 'https://jawadtaklofxp2-460ecfee769f.herokuapp.com',
-    'server84': 'https://jawadtaklofxp3-47572aeea1f3.herokuapp.com',
-    'server85': 'https://jawadtaklofxp4-13f315145ee8.herokuapp.com',
-    'server86': 'https://jawadtaklofxp5-b1810094edb6.herokuapp.com',
-    'server87': 'https://jawadtaklofxp6-8ae3571b087c.herokuapp.com',
-    'server88': 'https://jawadtaklofxp7-2451c7d3cd1f.herokuapp.com',
-    'server89': 'https://jawadtaklofxp8-e4530bacb46b.herokuapp.com',
-    'server90': 'https://jawadtaklofxp9-8513f1ae9076.herokuapp.com',
-    'server91': 'https://jawadtaklofxpz1-c132ca061786.herokuapp.com',
-    'server92': 'https://jawadtaklofxpz10-0f1aee2f1f69.herokuapp.com',
-    'server93': 'https://jawadtaklofxpz2-0ae94d353c3e.herokuapp.com',
-    'server94': 'https://jawadtaklofxpz3-900fb31b7a0d.herokuapp.com',
-    'server95': 'https://jawadtaklofxpz4-aba59cc79176.herokuapp.com',
-    'server96': 'https://jawadtaklofxpz5-d742a10f5570.herokuapp.com',
-    'server97': 'https://jawadtaklofxpz6-888f64122ee7.herokuapp.com',
-    'server98': 'https://jawadtaklofxpz7-a08ef089e2ba.herokuapp.com',
-    'server99': 'https://jawadtaklofxpz8-8239eb082d22.herokuapp.com',
-    'server100': 'https://jawadtaklofxpz9-bf180fbb2723.herokuapp.com'
+    'server1': 'https://erfanxmini1-d120f0a566d7.herokuapp.com',
+    'server2': 'https://erfanxmini2-581336bea650.herokuapp.com',
+    'server3': 'https://erfanxmini3-8c647230bcea.herokuapp.com',
+    'server4': 'https://erfanxmini4-1da10bf9c15c.herokuapp.com',
+    'server5': 'https://erfanxmini5-43f244327cdf.herokuapp.com',
+    'server6': 'https://erfanxmini6-57266df35c08.herokuapp.com',
+    'server7': 'https://erfanxmini7-0c8f9137c32e.herokuapp.com',
+    'server8': 'https://erfanxmini8-6b1f80d42176.herokuapp.com',
+    'server9': 'https://erfanxmini9-97cb04dd19e8.herokuapp.com',
+    'server10': 'https://erfanxmini10-f6e2816cde71.herokuapp.com'
 };
 
 // Get server list

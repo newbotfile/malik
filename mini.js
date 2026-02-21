@@ -4,16 +4,18 @@ const router = express.Router();
 
 // Server URLs for ERFAN-MD
 const serverUrls = {
-    'server1': 'https://erfanxmini1-d120f0a566d7.herokuapp.com',
-    'server2': 'https://erfanxmini2-581336bea650.herokuapp.com',
-    'server3': 'https://erfanxmini3-8c647230bcea.herokuapp.com',
-    'server4': 'https://erfanxmini4-1da10bf9c15c.herokuapp.com',
-    'server5': 'https://erfanxmini5-43f244327cdf.herokuapp.com',
-    'server6': 'https://erfanxmini6-57266df35c08.herokuapp.com',
-    'server7': 'https://erfanxmini7-0c8f9137c32e.herokuapp.com',
-    'server8': 'https://erfanxmini8-6b1f80d42176.herokuapp.com',
-    'server9': 'https://erfanxmini9-97cb04dd19e8.herokuapp.com',
-    'server10': 'https://erfanxmini10-f6e2816cde71.herokuapp.com'  // ✅ FIXED!
+    'server1': 'https://irfan-x1-6cf0ec6ac6f4.herokuapp.com',
+    'server2': 'https://irfan-x2-a47b0fd0369b.herokuapp.com',
+    'server3': 'https://irfan-x3-3a0bb4f72e98.herokuapp.com',
+    'server4': 'https://irfan-x4-18049ab2d15a.herokuapp.com',
+    'server5': 'https://irfan-x5-fc968780e33e.herokuapp.com',
+    'server6': 'https://irfan-x6-19bee864fce7.herokuapp.com',
+    'server7': 'https://irfan-x7-2ea9214bbbc8.herokuapp.com',
+    'server8': 'https://irfan-x8-df079c6a0406.herokuapp.com',
+    'server9': 'https://irfan-x9-3a39e194caa7.herokuapp.com',
+    'server10': 'https://irfan-x10-c9bc8fdb4e52.herokuapp.com',
+    'server11': 'https://irfan-x11-6d59647899a5.herokuapp.com',
+    'server12': 'https://irfan-x12-9ba2470d54c7.herokuapp.com'  // ✅ FIXED!
 };
 
 // Get server list

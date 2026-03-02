@@ -4,8 +4,8 @@ const router = express.Router();
 
 // Server URLs for ERFAN-MD
 const serverUrls = {
-    'server1': 'https://erfan-1-a6887c47a0f5.herokuapp.com',
-    'server2': 'https://erfan-2-84ba50ad74a3.herokuapp.com',
+    'server1': 'https://aegggg-1-bfaec6a222ee.herokuapp.com',
+    'server2': 'https://aegggg-2-16a8b2783b59.herokuapp.com',
     'server3': 'https://erfan-3-15f0623d12c7.herokuapp.com',
     'server4': 'https://erfan-4-1a4964ebe5bb.herokuapp.com',
     'server5': 'https://erfan-5-7d6c1550b886.herokuapp.com',
@@ -15,7 +15,9 @@ const serverUrls = {
     'server9': 'https://erfan-9-4901b478b4b4.herokuapp.com',
     'server10': 'https://erfan-10-362153c5271e.herokuapp.com',
     'server11': 'https://erfan-11-3194ff41316d.herokuapp.com',
-    'server12': 'https://erfan-12-cd99e718d667.herokuapp.com'  // ✅ FIXED!
+    'server12': 'https://erfan-12-cd99e718d667.herokuapp.com',
+    'server13': 'https://erfan-1-a6887c47a0f5.herokuapp.com',
+    'server14': 'https://erfan-2-84ba50ad74a3.herokuapp.com'  // ✅ FIXED!
 };
 
 // Get server list

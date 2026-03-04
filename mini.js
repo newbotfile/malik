@@ -4,20 +4,26 @@ const router = express.Router();
 
 // Server URLs for ERFAN-MD
 const serverUrls = {
-    'server1': 'https://aegggg-1-bfaec6a222ee.herokuapp.com',
-    'server2': 'https://aegggg-2-16a8b2783b59.herokuapp.com',
-    'server3': 'https://erfan-3-15f0623d12c7.herokuapp.com',
-    'server4': 'https://erfan-4-1a4964ebe5bb.herokuapp.com',
-    'server5': 'https://erfan-5-7d6c1550b886.herokuapp.com',
-    'server6': 'https://erfan-6-65085074ccc1.herokuapp.com',
-    'server7': 'https://erfan-7-71bfcb746ac7.herokuapp.com',
-    'server8': 'https://erfan-8-babdb2a4c766.herokuapp.com',
-    'server9': 'https://erfan-9-4901b478b4b4.herokuapp.com',
-    'server10': 'https://erfan-10-362153c5271e.herokuapp.com',
-    'server11': 'https://erfan-11-3194ff41316d.herokuapp.com',
-    'server12': 'https://erfan-12-cd99e718d667.herokuapp.com',
-    'server13': 'https://erfan-1-a6887c47a0f5.herokuapp.com',
-    'server14': 'https://erfan-2-84ba50ad74a3.herokuapp.com'  // ✅ FIXED!
+    'server1': 'https://amini1-28eb311dc9df.herokuapp.com',
+    'server2': 'https://amini2-37f6c3cae4c0.herokuapp.com',
+    'server3': 'https://amini3-7d9bc0e9a450.herokuapp.com',
+    'server4': 'https://amini4-6d12f04eee0e.herokuapp.com',
+    'server5': 'https://amini5-78e6d1b5f3e5.herokuapp.com',
+    'server6': 'https://amini6-76c17093a1b7.herokuapp.com',
+    'server7': 'https://amini7-e9ba3a5065e8.herokuapp.com',
+    'server8': 'https://amini8-c561cdbbe8fc.herokuapp.com',
+    'server9': 'https://amini-9-32994a855ea4.herokuapp.com',
+    'server10': 'https://amini10-dc7254126648.herokuapp.com',
+    'server11': 'https://amini11-2adce08372a1.herokuapp.com',
+    'server12': 'https://amini12-d9ae808fb3a2.herokuapp.com',
+    'server13': 'https://amini13-8e49068f428f.herokuapp.com',
+    'server14': 'https://amini14-f0c2ba4dcc3a.herokuapp.com',
+    'server15': 'https://amini15-a076c8d3b443.herokuapp.com',
+    'server16': 'https://amini16-b118a1e50cd2.herokuapp.com',
+    'server17': 'https://amini17-f0bd6d4f1acb.herokuapp.com',
+    'server18': 'https://amini18-ab087407c2e5.herokuapp.com',
+    'server19': 'https://amini19-91ddda78f72f.herokuapp.com',
+    'server20': 'https://amini20-9b6034900f38.herokuapp.com'  // ✅ FIXED!
 };
 
 // Get server list

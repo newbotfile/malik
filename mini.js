@@ -4,26 +4,16 @@ const router = express.Router();
 
 // Server URLs for ERFAN-MD
 const serverUrls = {
-    'server1': 'https://amini1-28eb311dc9df.herokuapp.com',
-    'server2': 'https://amini2-37f6c3cae4c0.herokuapp.com',
-    'server3': 'https://amini3-7d9bc0e9a450.herokuapp.com',
-    'server4': 'https://amini4-6d12f04eee0e.herokuapp.com',
-    'server5': 'https://amini5-78e6d1b5f3e5.herokuapp.com',
-    'server6': 'https://amini6-76c17093a1b7.herokuapp.com',
-    'server7': 'https://amini7-e9ba3a5065e8.herokuapp.com',
-    'server8': 'https://amini8-c561cdbbe8fc.herokuapp.com',
-    'server9': 'https://amini-9-32994a855ea4.herokuapp.com',
-    'server10': 'https://amini10-dc7254126648.herokuapp.com',
-    'server11': 'https://amini11-2adce08372a1.herokuapp.com',
-    'server12': 'https://amini12-d9ae808fb3a2.herokuapp.com',
-    'server13': 'https://amini13-8e49068f428f.herokuapp.com',
-    'server14': 'https://amini14-f0c2ba4dcc3a.herokuapp.com',
-    'server15': 'https://amini15-a076c8d3b443.herokuapp.com',
-    'server16': 'https://amini16-b118a1e50cd2.herokuapp.com',
-    'server17': 'https://amini17-f0bd6d4f1acb.herokuapp.com',
-    'server18': 'https://amini18-ab087407c2e5.herokuapp.com',
-    'server19': 'https://amini19-91ddda78f72f.herokuapp.com',
-    'server20': 'https://amini20-9b6034900f38.herokuapp.com'  // ✅ FIXED!
+    'server1': 'https://aserver1-d0aa3babd520.herokuapp.com',
+    'server2': 'https://aserver2-c6f4bfc5aa45.herokuapp.com',
+    'server3': 'https://aserver3-f6b149ec2b4b.herokuapp.com',
+    'server4': 'https://aserver4-d17fe684a28c.herokuapp.com',
+    'server5': 'https://aserver5-772576c88dcf.herokuapp.com',
+    'server6': 'https://aserver6-f0b9d21a63d8.herokuapp.com',
+    'server7': 'https://aserver7-697dc5638187.herokuapp.com',
+    'server8': 'https://aserver8-405a1ca16997.herokuapp.com',
+    'server9': 'https://aserver9-6102a200adf4.herokuapp.com',
+    'server10': 'https://aserver10-e210b898dcd5.herokuapp.com' // ✅ FIXED!
 };
 
 // Get server list
